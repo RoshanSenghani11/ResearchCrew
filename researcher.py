@@ -18,7 +18,6 @@ def researcher_node(state):
     return state
 
 if __name__ == "__main__":
-    user_input = input("What is today's topic?: ")
-    test_state = {"topic": "user_input", "search_results": "", "summary": "", "report": ""}
+    test_state = {"topic": "What is LangGraph", "search_results": "", "summary": "", "report": ""}
     output = researcher_node(test_state)
     print(output)

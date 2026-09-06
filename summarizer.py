@@ -13,8 +13,15 @@ def summarizer_node(state):
     search_results = state["search_results"]
 
     prompt = f"""
-    You are a research assistant. Below are raw search results about a topic.
-    While summarizing topics make sure that language should be simple and straight forward.The length of constraint should be 5 bullet points so it doesn't ramble.
+    You are a research assistant explaining things to someone with no technical background.
+
+    Read the search results below and summarize them in 5 bullet points.
+
+    Rules:
+    - Use simple, everyday words — avoid jargon, technical terms, or buzzwords
+    - If a technical term is unavoidable, explain it briefly in plain English right after using it
+    - Write short sentences
+    - Imagine you're explaining this to a curious teenager, not an expert
 
     Search results:
     {search_results}

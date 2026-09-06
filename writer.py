@@ -15,7 +15,14 @@ def writer_node(state):
 
     prompt = f"""
     {topic},
-    it is a report not a summary, you have to create structural report on given topic, for the reference I am sharing you the summary -> {summary}, 
+    it is a report not a summary, you have to create a structured report on the given topic, for reference I am sharing you the summary -> {summary}
+
+    Rules:
+    - Use simple, everyday language throughout — avoid jargon and technical terms
+    - If a technical term is necessary, explain what it means in plain words right after
+    - Keep sentences short and clear
+    - Write as if explaining to someone who is smart but has no background in this topic
+
     report should be in order like first - title, then a short intro, then a couple of body sections and at the very end a brief conclusion. Make this as simple as possible.
 
     Title -> Short Intro -> Body Section -> Brief Conclusion
