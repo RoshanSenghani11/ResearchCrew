@@ -9,7 +9,7 @@ st.set_page_config(
 
 st.title("ResearchCrew")
 
-topic = st.text_input("What you got today?", max_char = 200)
+topic = st.text_input("What you got today?", max_chars = 200)
 
 if st.button("Search"):
     if topic:
