@@ -26,6 +26,14 @@ def writer_node(state):
     report should be in order like first - title, then a short intro, then a couple of body sections and at the very end a brief conclusion. Make this as simple as possible.
 
     Title -> Short Intro -> Body Section -> Brief Conclusion
+    
+    Format the report using proper Markdown, with these sections in this order:
+    1. An engaging, descriptive title (not literally the word "Title")
+    2. A short introduction section — give it a natural heading like "Overview" or "What You Need to Know" (not literally "Short Intro")
+    3. A few body sections — each with a specific, relevant heading based on what that section covers (not generic labels like "Body Section 1")
+    4. A closing section — give it a natural heading like "Wrapping Up" or "Key Takeaway" (not literally "Brief Conclusion")
+
+    Use "# " for the main title, "## " for each section heading, "**bold**" for key terms, and "- " for bullets where useful.
     """
 
     response = llm.invoke(prompt)
